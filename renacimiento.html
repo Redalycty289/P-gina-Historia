@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Guerra Mundial</title>
+    <meta name="keywords" content="Segunda Guerra Mundial, causas, JavaScript">
+    
+    <style>
+      body {
+        font-family: Century Gothic, sans-serif;
+        background-color: #faeb66;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+      header {
+        background-color: #c4840f;
+        color: #ecf0f1;
+        padding: 1em;
+        text-align: center;
+      }
+      nav {
+        background-color: #6b4600;
+        color: #ecf0f1;
+        padding: 1em;
+        text-align: center;
+      }
+      nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        margin: 0 1em;
+        border-radius: 5px;
+        transition: background-color 0.8s ease;
+      }
+      nav a:hover {
+        background-color: #2980b9;
+      }
+      section {
+        padding: 20px;
+      }
+      footer {
+        background-color: #1E5128;
+        color: #ecf0f1;
+        padding: 1em;
+        text-align: center;
+      }
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 36px;
+        margin-right: 60px;
+      }
+
+      #openBtn {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+      }
+
+      #openBtn.hidden {
+        display: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <span id="openBtn" onclick="openNav()">&#9776; Temas de Historia</span>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="segunda_guerra_mundial.html">Segunda Guerra Mundial</a>
+      <a href="primera_guerra_mundial.html">Primera Guerra Mundial</a>
+      <a href="expansionismo_japones.html">Expansionismo japonés</a>
+      <a href="expansionismo_italiano.html">Expansionismo italiano</a>
+      <a href="expansionismo_aleman.html">Expansionismo alemán</a>
+      <a href="caida_del_imperio_romano.html">Caída del imperio romano</a>
+      <a href="renacimiento.html">Renacimiento</a>
+      <a href="guerra_fria.html">Guerra fría</a>
+      <a href="revolucion_industrial.html">Revolucion industrial</a>
+      <a href="guerra_civil_española.html">Guerra civil española</a>
+      <a href="revolucion_rusa.html">Revolución Rusa</a>
+      <a href="imperio_mongol.html">Imperio Mongol</a>
+      <a href="guerra_napoleonicas.html">Guerras napoleónicas</a>
+      <a href="virreinato.html">Virreinato</a>
+      <a href="guerras_punicas.html">Guerras púnicas</a>
+      <a href="revolución_francesa.html">Revolución francesa</a>
+      <a href="independencias_destacadas.html">Independencias destacadas</a>
+      <a href="biografias.html">Biografías destacadas</a>
+      <a href="prueba_externa_ib.html">Prueba externa IB</a>
+      <a href="prueba_interna_ib.html">Prueba Interna IB</a>
+      <a href="#" onclick="scrollToTop()">Ir arriba</a>
+      <a href="#" onclick="scrollToBottom()">Ir abajo</a>
+    </div>
+
+    <header>
+      <h1>Renacimiento</h1>
+    </header>
+
+    <nav>
+      <a href="#introduccion">Introducción</a>
+      <a href="#causas">Causas</a>
+      <a href="#desarrollo">Desarrollo</a>
+      <a href="#consecuencias">Consecuencias</a>
+    </nav>
+
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>El Renacimiento fue un movimiento cultural y artístico que surgió en Europa entre los siglos XIV y XVII, marcando el fin de la Edad Media y el inicio de la Edad Moderna. Caracterizado por un renovado interés en los valores y conocimientos de la antigüedad clásica grecorromana, el Renacimiento promovió una visión humanista del mundo, centrada en el potencial y la dignidad del ser humano.</p>
+      <p>Este período vio florecer las artes, la literatura, la ciencia y la filosofía, con figuras emblemáticas como Leonardo da Vinci, Michelangelo, y Galileo Galilei, quienes impulsaron innovaciones y avances que transformarían profundamente la sociedad europea y sentarían las bases para el desarrollo del pensamiento moderno.</p>
+      <img src="https://th.bing.com/th/id/OIP.JkfyoV8Mu0KPydNREIe9MQHaEt?rs=1&pid=ImgDetMain" width="100%" height="10%">
+    </section>
+
+    <section id="causas">
+      <h2>Causas</h2>
+      <p>La Segunda Guerra Mundial fue el resultado de una compleja interacción de diversas causas políticas, económicas y sociales que se desarrollaron en las décadas previas al conflicto:</p>
+      <ul>
+        <li><b>Tratado de Versalles y Descontento en Alemania:</b></li>
+        <p>El Tratado de Versalles, firmado en 1919, impuso a Alemania duras condiciones que incluían la pérdida de territorios, limitaciones a sus fuerzas armadas y el pago de reparaciones económicas. Estas medidas generaron un fuerte resentimiento y un sentimiento de injusticia en la población alemana. Muchos alemanes percibieron las condiciones del tratado como humillantes y consideraron que la carga económica era excesiva. El surgimiento de líderes nacionalistas, como Adolf Hitler, capitalizó este descontento, promoviendo un renacimiento del nacionalismo y el rechazo de las restricciones impuestas por Versalles.</p>
+
+        <li><b>Expansionismo y Agresión de las Potencias del Eje:</b></li>
+        <p>Alemania, Italia y Japón compartían la ambición de expandir sus territorios y recursos. Adolf Hitler buscaba la creación de un Gran Reich Alemán, Benito Mussolini buscaba restaurar la grandeza del antiguo Imperio Romano, y Japón aspiraba a establecer una esfera de influencia en Asia. La anexión de Austria en 1938 (Anschluss) y la ocupación de los Sudetes en 1938 por parte de Alemania, sin una respuesta significativa de las potencias occidentales, alentaron a Hitler a seguir adelante con sus ambiciones expansionistas.</p>
+
+        <li><b>Política de Apaciguamiento:</b></li>
+        <p>La política de apaciguamiento adoptada por Francia y el Reino Unido estaba destinada a evitar un conflicto directo con las potencias del Eje mediante concesiones diplomáticas. Sin embargo, estas concesiones solo sirvieron para fortalecer la posición de las potencias agresoras y permitirles avanzar sin restricciones. El Acuerdo de Munich en 1938, donde se permitió a Hitler anexar los Sudetes, es un ejemplo destacado de esta política, que resultó ser un fracaso en contener la agresión nazi.</p>
+
+        <li><b>Agresión Japonesa en Asia:</b></li>
+        <p>Japón, enfrentando una creciente escasez de recursos naturales en su territorio, buscó expandir su imperio a través de invasiones en China y otras regiones del sudeste asiático. El Incidente de Mukden en 1931 marcó el inicio de la expansión japonesa en China, y la Segunda Guerra Sino-Japonesa resultó en una ocupación prolongada y brutal. Las atrocidades japonesas en China y otras áreas contribuyeron a las tensiones en la región y aumentaron las preocupaciones internacionales.</p>
+
+        <li><b>Fracaso de la Sociedad de Naciones:</b></li>
+        <p>La Sociedad de Naciones, creada con la intención de prevenir conflictos mediante la cooperación internacional, demostró ser ineficaz en la prevención de la agresión. La ausencia de grandes potencias, como Estados Unidos y la Unión Soviética, limitó su capacidad para aplicar sanciones efectivas. El retiro de Alemania de la Sociedad de Naciones en 1933 y la invasión japonesa de Manchuria en 1931 mostraron la incapacidad de la organización para mantener la paz.</p>
+
+        <li><b>Gran Depresión:</b></li>
+        <p>La Gran Depresión, que comenzó en 1929, tuvo un impacto significativo en la estabilidad económica y social de muchas naciones. El desempleo masivo, la pobreza y la desconfianza en las instituciones políticas crearon un terreno fértil para el surgimiento de movimientos totalitarios. Estos movimientos, como el nazismo en Alemania y el fascismo en Italia, ofrecían soluciones aparentes a los problemas económicos y sociales, pero a menudo se basaban en ideologías autoritarias y agresivas </p>
+      </ul>
+    </section>
+
+    <section id="desarrollo">
+      <h2>Desarrollo</h2>
+      <p>La invasión de Polonia por parte de Alemania en 1939 fue el resultado de la táctica Blitzkrieg, caracterizada por ataques relámpago y la coordinación eficiente de fuerzas aéreas, terrestres y acuáticas. Esta táctica permitió a las fuerzas alemanas, bajo el mando de Adolf Hitler, superar las defensas polacas. Además, la Unión Soviética invadió Polonia desde el este, de acuerdo con el Pacto Molotov-Ribbentrop. La rápida caída de Polonia llevó a la declaración de guerra por parte de Gran Bretaña y Francia, marcando el inicio formal de la Segunda Guerra Mundial.</p>
+      <p>La Blitzkrieg alemana continuó su avance en Europa occidental con sorprendente eficacia. En abril de 1940, las fuerzas alemanas invadieron Dinamarca y Noruega, asegurando importantes rutas de suministro. Sin embargo, la conquista más impactante fue la de Francia en mayo de 1940. La estrategia alemana, que involucró el uso de tanques y tropas motorizadas, superó las líneas defensivas francesas y rodeó a las fuerzas aliadas, llevando a la caída de París en junio de 1940.</p>
+
+      <p>La Batalla de Gran Bretaña, luchada en los cielos sobre el Reino Unido entre la RAF británica y la Luftwaffe alemana, fue una prueba crítica de la capacidad de resistencia y la innovación tecnológica. La introducción del radar permitió a los británicos anticipar los ataques aéreos alemanes. La valentía de los pilotos británicos, conocidos como "los pocos", jugó un papel crucial en la resistencia aérea, y la Blitz alemana no logró quebrantar la moral británica ni abrir el camino para una invasión terrestre.</p>
+
+      <p>La invasión de la Unión Soviética en junio de 1941 fue la más grande en la historia militar. A pesar de los avances iniciales alemanes, la extensión geográfica de la operación y la resistencia soviética condujeron a un estancamiento en el frente oriental. La Batalla de Moscú en diciembre de 1941 marcó el fracaso de Alemania para capturar la capital soviética y un cambio en el curso de la guerra.</p>
+
+      <p>El ataque sorpresa japonés a la base naval de Pearl Harbor el 7 de diciembre de 1941, llevó a Estados Unidos a entrar en la guerra. Esto marcó un punto de inflexión significativo, ya que la maquinaria industrial estadounidense se puso al servicio de los Aliados. La participación estadounidense también incluyó campañas en el Pacífico y en el norte de África. La Batalla de Midway en 1942 fue especialmente crucial, ya que detuvo el avance japonés en el Pacífico.</p>
+
+      <p>Las batallas en el Pacífico fueron feroces y brutales, caracterizadas por el combate cuerpo a cuerpo y la resistencia fanática japonesa. La Campaña de Guadalcanal, la Batalla de Iwo Jima y la Batalla de Okinawa fueron escenarios de enfrentamientos sangrientos. La estrategia "isla en isla" de los Aliados llevó a una serie de desembarcos anfibios para capturar islas estratégicas y acercarse a Japón.</p>
+
+      <p>La Batalla de Stalingrado, librada entre agosto de 1942 y febrero de 1943, fue uno de los enfrentamientos más sangrientos de la historia. La ciudad soviética resistió tenazmente, y el Ejército Rojo lanzó una contraofensiva en el invierno, atrapando y derrotando al Sexto Ejército alemán. La victoria soviética en Stalingrado marcó un punto de inflexión en el frente oriental.</p>
+
+      <p>La Operación Overlord, conocida como el Día D, fue una de las operaciones militares más grandes de la historia. El 6 de junio de 1944, las fuerzas aliadas desembarcaron en las playas de Normandía, estableciendo una cabeza de puente en Europa occidental. La liberación de París en agosto de 1944 marcó el inicio de la liberación gradual de Europa occidental de la ocupación nazi.</p>
+
+      <p>El avance simultáneo de las fuerzas aliadas desde el oeste y del Ejército Rojo desde el este llevó a la rendición incondicional de Alemania en mayo de 1945. La toma de Berlín por las fuerzas soviéticas y la muerte de Adolf Hitler marcaron el fin de la lucha en Europa.</p>
+
+      <p>En el Pacífico, las fuerzas aliadas continuaron avanzando hacia Japón, pero la posibilidad de enormes bajas en una invasión terrestre llevó a la decisión de utilizar bombas atómicas. El 6 de agosto de 1945, una bomba atómica fue lanzada sobre Hiroshima, seguida por otra en Nagasaki el 9 de agosto. Estos eventos llevaron a la rendición incondicional de Japón el 15 de agosto de 1945, marcando el fin de la Segunda Guerra Mundial.</p>
+    </section>
+
+    <section id="consecuencias">
+      <h2>Consecuencias</h2>
+      <p>La Segunda Guerra Mundial (1939-1945) tuvo profundas y extensas consecuencias que afectaron a nivel global en diversas áreas. Aquí se mencionan algunas de las consecuencias más destacadas:</p>
+
+      <p><b>Devastación y Pérdidas Humanas:</b> La guerra causó una enorme pérdida de vidas humanas. Se estima que murieron entre 70 y 85 millones de personas, tanto militares como civiles. La devastación de ciudades y países enteros fue abrumadora, especialmente en Europa, donde se luchó en gran medida.</p>
+
+      <p><b>Reconstrucción:</b> Después de la guerra, se inició un período de reconstrucción en Europa y Asia. Muchas ciudades y regiones tuvieron que ser reconstruidas desde cero, y se implementaron programas de ayuda para recuperar las economías devastadas.</p>
+
+      <p><b>Inicio de la Guerra Fría:</b> Las tensiones entre las potencias vencedoras, principalmente Estados Unidos y la Unión Soviética, llevaron al inicio de la Guerra Fría. Este conflicto ideológico y político se prolongó durante décadas y dividió al mundo en bloques liderados por estas dos superpotencias.</p>
+
+      <p><b>Creación de las Naciones Unidas:</b> Con el objetivo de prevenir futuros conflictos y promover la cooperación internacional, se estableció la Organización de las Naciones Unidas (ONU) en 1945. Su misión es mantener la paz y la seguridad mundial, así como promover el desarrollo y los derechos humanos.</p>
+
+      <p><b>Descolonización:</b> La guerra aceleró el proceso de descolonización, ya que muchas potencias coloniales europeas no pudieron mantener sus imperios después de los costos y las consecuencias devastadoras del conflicto.</p>
+
+      <p><b>División de Alemania:</b> Alemania fue dividida en dos partes: la República Federal de Alemania (RFA) en el oeste y la República Democrática Alemana (RDA) en el este. Esta división reflejó las tensiones de la Guerra Fría.</p>
+
+      <p><b>Inicio de la Era Nuclear:</b> La Segunda Guerra Mundial vio el desarrollo y el uso de armas nucleares en Hiroshima y Nagasaki por parte de Estados Unidos. Esto marcó el inicio de la era nuclear y llevó a la carrera armamentista nuclear entre las superpotencias.</p>
+
+      <p><b>Cambio en el Equilibrio de Poder:</b> La guerra alteró significativamente el equilibrio de poder en el mundo. Las antiguas potencias coloniales europeas perdieron influencia, mientras que Estados Unidos y la Unión Soviética emergieron como las dos principales superpotencias.</p>
+    </section>
+
+    <footer>
+      <p>© Redalycty 2024</p>
+      <h2>¿Quieres susbribirte a nuestra página web? Bro</h2>
+      <p>Así podrás recibir las últimas actualizaciones directamente en tu bandeja de entrada.</p>
+
+      <form action="procesar_suscripcion.php" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+        <input type="submit" value="Suscribirse">
+      </form>
+    </footer>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "20%";
+        document.getElementById("openBtn").classList.add("hidden");
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("openBtn").classList.remove("hidden");
+      }
+
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+
+      function scrollToBottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+  </script>
+  </body>
+  </html>
